@@ -193,20 +193,27 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   var Tabla6 = [];
   for ( var i = 0; i <= 10; i++){
-    Tabla6.push [i * 10];
+    Tabla6.push (6 * i);
   }
+  return Tabla6
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  var string = numero.toString();
+  var digitos = string.length
+  if (digitos === 3) {
+    return true;
+  }
+  return false;
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
 }
 
 
