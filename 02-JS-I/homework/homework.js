@@ -36,7 +36,6 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   return x + y
-
 }
 
 function resta(x, y) {
@@ -218,7 +217,6 @@ function obtenerAreaRectangulo(alto, ancho) {
   var Area = ancho * alto;
   return Area;
 }
-
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
