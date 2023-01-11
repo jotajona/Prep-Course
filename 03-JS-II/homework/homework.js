@@ -59,22 +59,18 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-switch(color){
-  case 'blue':
-    console.log("This is blue");
-    break; 
-    case 'red':
-    console.log("This is red");
-    break; 
-    case 'green':
-    console.log("This is green");
-    break; 
-    case 'orange':
-    console.log("This is orange");
-    break; 
-    default:
-    console.log("Color not found");
-}
+  switch(color) {
+    case "blue":
+      return "This is blue";
+    case "red": 
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default: 
+    return "Color not found";
+  }
 }
 
 
@@ -156,12 +152,14 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-for ( var i = 2; i < numero; i++){
-  if (numero % i === 0){
-    return false;
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
+      return false;
+    }
   }
-}
-return true;
+  return true;
 }
 
 function esVerdadero(valor){
@@ -203,12 +201,14 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   // (numero + 5) * 8 veces;
-  var inicial = 0
-do {
-  i = 0
-  inicial = numero + inicial
-}while (i < 5)
-return inicial * 8
+  var acc = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    acc = acc + 5;
+  }
+  while(i < 8);
+  return acc;
 }
 
 
